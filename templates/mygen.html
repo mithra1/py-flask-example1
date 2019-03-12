@@ -1,0 +1,24 @@
+
+<!doctype html>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<html>
+	<head>
+		<title>My First Web App</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	</head> 
+
+	<body>
+
+			{% if gen_cohort %}
+
+				<p> <h2> Hi, Your belong to  <b>{{gen_cohort}}</b>  generarion! </h2></p>
+
+			{% else %}
+
+			<p>Nothing to diplay!</p>
+
+			{% endif %}
+
+
+	</body> 
+</html>
